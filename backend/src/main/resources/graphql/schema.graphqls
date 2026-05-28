@@ -1,0 +1,35 @@
+type Movie {
+    id: ID
+    title: String
+    genre: String
+    year: Int
+}
+
+
+
+type Book {
+    id: ID
+    title: String
+    author: String
+    pages: Int
+}
+
+
+type Query {
+
+    getAllMovies: [Movie!]
+    getMoviesByGenre(genre: String): [Movie!]
+    getAllBooks: [Book!]
+    getBooksByAuthor(author: String): [Book!]
+    searchMovies(keyword: String!): [Movie!]
+    searchBooks(keyword: String!): [Book!]
+
+}
+
+
+type Mutation {
+
+    createMovie(title: String!, genre: String!, year: Int!): Movie
+
+    createBook(title: String!, author: String!, pages: Int!): Book
+}

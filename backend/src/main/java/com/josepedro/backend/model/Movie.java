@@ -1,5 +1,6 @@
 package com.josepedro.backend.model;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -14,6 +15,7 @@ public class Movie {
 
     private String title;
     private String genre;
+    @Column(name = "release_year")
     private Integer year;
 
     public Movie() {}
