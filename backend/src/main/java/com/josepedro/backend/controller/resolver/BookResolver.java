@@ -1,4 +1,4 @@
-package com.josepedro.backend.resolver;
+package com.josepedro.backend.controller.resolver;
 
 import java.util.List;
 
